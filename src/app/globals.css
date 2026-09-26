@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/*
+ * LibraAI design system — light, clean, professional.
+ * Academic + AI feel: indigo primary, slate neutrals.
+ */
+
+@theme {
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-border-subtle: #e2e8f0;
+
+  --color-status-available: #059669;
+  --color-status-borrowed: #2563eb;
+  --color-status-due-soon: #d97706;
+  --color-status-overdue: #dc2626;
+  --color-status-returned: #64748b;
+}
+
+html {
+  @apply antialiased;
+}
+
+body {
+  @apply bg-surface text-slate-900;
+}
+
+* {
+  @apply border-border-subtle;
+}
